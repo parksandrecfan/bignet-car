@@ -81,14 +81,14 @@ python acc_and_conf.py \
 <p>Dimension reduction of 2D/3D PCA/tSNE is done in "dim_red.py". For example, type this in terminal:</p>
 <pre>
   <code>
-    python dim_red.py \
-    --model_folder "model/curve/6brands/random_sample_separateavg_logo_2std-0" \
-    --dataset_folder "full_set_separateavg_logo_2std" \
-    --eval_folder "eval" \
-    --model_name "rand_init_car_model 723 epochs_good test.pt" \
-    --epoch 723 \
-    --num_brands 6 \
-    --device 0 
+python dim_red.py \
+--model_folder "model/curve/6brands/random_sample_separateavg_logo_2std-0" \
+--dataset_folder "full_set_separateavg_logo_2std" \
+--eval_folder "eval" \
+--model_name "rand_init_car_model 723 epochs_good test.pt" \
+--epoch 723 \
+--num_brands 6 \
+--device 0 
   </code>
 </pre>
 <p>In this snippet, it outputs the train/test sets' 2D tsne/PCA plots in evaluation folder. The paths are identical to the <b>Accuracy and confusion matrix</b> section.</p>
