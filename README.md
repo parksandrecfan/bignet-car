@@ -28,7 +28,12 @@
 The process to converge the SVG (nx9 numpy) dataset to a BIGNet-friendly format is done in "SVG2BIGNet.py". Place "train_test_split_names.pkl" in "full_set_path", and it would return 5 files, including "svg_lists.pkl", "cors.pkl", "labels.pkl", "curve_tensors.pkl", and "curve_labels.pkl" also in "full_set_path". This the the example code to type in the terminal:</p>
 <pre>
   <code>
-    python SVG2BIGNet.py --full_set_folder full_set_separateavg_logo_2std --dataset_folder dataset --nx9_folder nx9 --format ".pkl”
+    python SVG2BIGNet.py \
+    --full_set_folder \
+    full_set_separateavg_logo_2std \
+    --dataset_folder dataset \
+    --nx9_folder nx9 \
+    --format ".pkl”
   </code>
 </pre>
 
@@ -39,7 +44,7 @@ If you wish to skip this step, the 5 files can be downloaded <a href=""><b>here<
 <p>To train with 6 brands cars with logos using the first GPU of your device, make sure <b>"full_dataset_separateavg_logo.txt" is in the directory and that a folder to store your trained BIGNet model exists</b>(if not, create an empty folder). Then, run python train.py in terminal. For example, Type the following command in terminal:</p>
 <pre>
   <code>
-        python 10.py \
+        python train.py \
         --dataset_names_path "full_dataset_separateavg_logo_2std.txt" \
         --full_set_folder "full_set_separateavg_logo" \
         --model_folder "model/curve/6brands/random_sample_separateavg_logo_2std-0" \
