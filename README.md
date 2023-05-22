@@ -28,12 +28,12 @@
 The process to converge the SVG (nx9 numpy) dataset to a BIGNet-friendly format is done in "SVG2BIGNet.py". Place "train_test_split_names.pkl" in "full_set_path", and it would return 5 files, including "svg_lists.pkl", "cors.pkl", "labels.pkl", "curve_tensors.pkl", and "curve_labels.pkl" also in "full_set_path". This the the example code to type in the terminal:</p>
 <pre>
   <code>
-    python SVG2BIGNet.py \
-    --full_set_folder \
-    full_set_separateavg_logo_2std \
-    --dataset_folder dataset \
-    --nx9_folder nx9 \
-    --format ".pkl”
+python SVG2BIGNet.py \
+--full_set_folder \
+full_set_separateavg_logo_2std \
+--dataset_folder dataset \
+--nx9_folder nx9 \
+--format ".pkl”
   </code>
 </pre>
 
@@ -44,12 +44,12 @@ If you wish to skip this step, the 5 files can be downloaded <a href=""><b>here<
 <p>To train with 6 brands cars with logos using the first GPU of your device, make sure <b>"full_dataset_separateavg_logo.txt" is in the directory and that a folder to store your trained BIGNet model exists</b>(if not, create an empty folder). Then, run python train.py in terminal. For example, Type the following command in terminal:</p>
 <pre>
   <code>
-        python train.py \
-        --dataset_names_path "full_dataset_separateavg_logo_2std.txt" \
-        --full_set_folder "full_set_separateavg_logo" \
-        --model_folder "model/curve/6brands/random_sample_separateavg_logo_2std-0" \
-        --brands 6 \
-        --device 0
+python train.py \
+--dataset_names_path "full_dataset_separateavg_logo_2std.txt" \
+--full_set_folder "full_set_separateavg_logo" \
+--model_folder "model/curve/6brands/random_sample_separateavg_logo_2std-0" \
+--brands 6 \
+--device 0
   </code>
 </pre>
 Your trained model, and train/test loss and accuracy history will be stored in the model_folder directory. The paths are:
@@ -60,14 +60,14 @@ Your trained model, and train/test loss and accuracy history will be stored in t
 To know the accuracy and confusion matrix of a desired BIGNet model, run "acc_and_conf.py". For example, type this in terminal:
 <pre>
   <code>
-    python acc_and_conf.py \
-    --dataset_name "full_set_separateavg_logo_2std" \
-    --model_folder "model/curve/6brands/random_sample_separateavg_logo_2std-0" \
-    --model_name "rand_init_car_model 723 epochs_good test.pt" \
-    --eval_folder "eval" \
-    --num_brands 6 \
-    --device 0 \
-    --epoch 723
+python acc_and_conf.py \
+--dataset_name "full_set_separateavg_logo_2std" \
+--model_folder "model/curve/6brands/random_sample_separateavg_logo_2std-0" \
+--model_name "rand_init_car_model 723 epochs_good test.pt" \
+--eval_folder "eval" \
+--num_brands 6 \
+--device 0 \
+--epoch 723
   </code>
 </pre>
 <p>In this snippet, it calculates the confusion matrix of a given dataset and model, and save the train/test accuracy curve, loss curve and confusion matrix plots in directory.</p>
@@ -97,16 +97,16 @@ To know the accuracy and confusion matrix of a desired BIGNet model, run "acc_an
 <p>Visualization of brand-related features are implemented in "cam_ablation.py". For example, type this in terminal:</p>
 <pre>
   <code>
-    python cam_ablation.py \
-    --model_folder "model/curve/6brands/random_sample_separateavg_logo_2std-0" \
-    --model_name "rand_init_car_model 723 epochs_good test.pt" \
-    --dataset_folder "full_set_separateavg_logo_2std" \
-    --eval_folder "eval" \
-    --run_train 1 \
-    --run_test 1 \
-    --is_important 1 \
-    --epoch 723 \
-    --num_brands 6 
+python cam_ablation.py \
+--model_folder "model/curve/6brands/random_sample_separateavg_logo_2std-0" \
+--model_name "rand_init_car_model 723 epochs_good test.pt" \
+--dataset_folder "full_set_separateavg_logo_2std" \
+--eval_folder "eval" \
+--run_train 1 \
+--run_test 1 \
+--is_important 1 \
+--epoch 723 \
+--num_brands 6 
   </code>
 </pre>
 <p>In this snippet, it outputs the brand-relevant/irrelevant features of the desired model on each sample in dataset. The paths are:</p>
