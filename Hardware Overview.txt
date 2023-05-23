@@ -6,7 +6,7 @@ https://www.supermicro.com/en/Aplus/system/4U/4124/AS-4124GS-TNR.cfm
 (Lambda AI)
 
 Server Specifications:
-- Processor: 2x AMD EPYC 7302: 16 cores, 3.0 GHz, 128 MB cache, PCIe 4.0
+- Processor: 2x AMD EPYC 7502: 32 cores, 2.5 GHz, 128 MB cache, PCIe 4.0
 - GPUs: 4x Quadro RTX A6000 | 48GB + NVLink
 - Memory: 128 GB
 - Operating system drive: 1.92 TB SSD (NVMe)

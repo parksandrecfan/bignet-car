@@ -11,6 +11,8 @@ black==23.1.0
 bleach==6.0.0
 brotlipy==0.7.0
 cachetools==5.3.0
+cairocffi==1.5.1
+CairoSVG==2.7.0
 certifi @ file:///croot/certifi_1665076670883/work/certifi
 cffi @ file:///tmp/abs_98z5h56wf8/croots/recipe/cffi_1659598650955/work
 charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
