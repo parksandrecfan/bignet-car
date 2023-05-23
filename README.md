@@ -66,9 +66,10 @@ python dim_red.py \
 --device 0 
 </code></pre></p>
 
-<p>The confusion matrix and tSNE results show BMW, Benz, and Audi are found to achieve higher recognition rates/clustering compared to other brands. This finding matches the
+<p>The tSNE results <b>train_tsne.png</b> and <b>test_tsne.png</b> can be found in directory "model/curve/6brands/random_sample_separateavg_logo_2std-0/eval/723_epoch".</p>
+<p><b>Results show BMW, Benz, and Audi are found to achieve higher recognition rates/clustering compared to other brands. This finding matches the
 optimized marketing strategy that luxurious cars value brand
-consistency more than economy cars.<b></b></p>
+consistency more than economy cars.</b></p>
 <img src="data/conf_and_tsne.png" width="1000">
 
 
