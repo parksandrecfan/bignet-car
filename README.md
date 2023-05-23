@@ -203,7 +203,7 @@ python cam_ablation.py \
 <p>brand-relevant images: ablation folder + train/test + group/important2</p>
 <p>brand-irrelevant images: ablation folder + train/test + group/unimportant2</p>
 
-<p>For any questions implementing, feel free to email Sean Chen as yuhsuan2@andrew.cmu.edu</p>
+<p>For any questions implementing, feel free to email Sean Chen as <b>yuhsuan2@andrew.cmu.edu</b></p>
 
 </body>
 </html>
