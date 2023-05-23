@@ -92,10 +92,10 @@ python cam_ablation.py \
 <p>* Train set, brand-irrelevant: <b>train/group/unimportant2</b>.</p>
 <p>* Test set, brand-relevant: <b>test/group/important2</b>.</p>
 <p>* Test set, brand-irrelevant: <b>test/group/unimportant2</b>.</p>
-<p>Here are a few visualization results:</p>
+<p>Here are a few visualization results. It is obvious that BIGNet captures luxury segments’ well-distinguishable car parts including grille, headlights and fog lights, while there are much fewer geometric clues on affordable cars (Toyota) that it has to rely on logo detection:</p>
 <img src="data/cam.png" width="1000">
 
-<p>--------Detailed Documentation--------</p>
+<p><b>-------------------More Detailed Documentation-------------------</b></p>
 <p>This instruction will go through how to train BIGNet on 6-brand car images that has logos. For variations of 10 brands and logo removal, and the comparison with pixel CNN (simCLR+gradCAM) results, please email me, Sean Chen, at yuhsuan2@andrew.cmu.edu and I'll be happy to provide more support!</p>
 <h3>SVG/nx9 Dataset</h3>
 <p>The dataset format that would be used down the pipeline is nx9, and it can be downloaded <a href="https://drive.google.com/file/d/1EhZq4pBseJuNEIUJ-KXauxGjvlZU9cOC/view?usp=share_link"><b>here</b></a>(has to decompress). Each pickle file is a nx9 numpy matrix that represents a car's front view like the image below. The one-to-one correspondence SVG files can be found <a href="https://drive.google.com/file/d/1zU_wg6gt2tVKp9Nh09x_-dqSyGOWK-K0/view?usp=share_link"><b>here</b></a>(has to decompress). The files that share the same names represent the same car image. 0,1,2,3 at the end of each filename indicates the 4 augmented images of the same car. The SVG files are provided to give users a glance of the images, and is not actually being used down the pipeline. (In addition, one could easily verify the correspondence using the nx92svg and svg2nx9 functions in "preprocess.py" to convert between the two data format).</p>
