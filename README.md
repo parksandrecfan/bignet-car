@@ -87,7 +87,7 @@ python cam_ablation.py \
 --num_brands 6 
   </code>
 </pre>
-<p>7. You're done! View the features in "model/curve/6brands/random_sample_separateavg_logo_2std-0/eval/723_epoch/ablation". Redness indicates the attention.</p>
+<p>9. You're done! View the features in "model/curve/6brands/random_sample_separateavg_logo_2std-0/eval/723_epoch/ablation". Redness indicates the attention.</p>
 <p>* Train set, brand-relevant: <b>train/group/important2</b>.</p>
 <p>* Train set, brand-irrelevant: <b>train/group/unimportant2</b>.</p>
 <p>* Test set, brand-relevant: <b>test/group/important2</b>.</p>
