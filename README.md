@@ -21,7 +21,7 @@
 
 <h2>Visualization Inference Demo Instruction</h2>
 <p>1. Download this repo to your linux server. In your terminal:</p>
-<p><pre><code>git clone https://github.com/parksandrecfan/bignet-car.git</code><pre></p>
+<p><pre><code>git clone https://github.com/parksandrecfan/bignet-car.git</code></pre></p>
 <p>2. Install the python packages in requirements.txt on your linux machine.</p>
 <p>Install miniconda <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html">here</a> on your linux server if you haven't. Installing anaconda on a windows computer may also work.</p>
 <p>In terminal:</p>
