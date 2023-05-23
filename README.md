@@ -24,7 +24,7 @@
 <p><pre><code>git clone https://github.com/parksandrecfan/bignet-car.git</code></pre></p>
 <p>2. Install the python packages in requirements.txt on your linux machine.</p>
 <p>Install miniconda <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html">here</a> on your linux server if you haven't. Installing anaconda on a windows computer may also work.</p>
-<p>In terminal:</p>
+<p>Then in terminal:</p>
 <p><pre><code>
 conda create -n BIGNet2
 conda activate BIGNet2
@@ -39,7 +39,7 @@ mkdir -p model/curve/6brands/random_sample_logo_2std-0/eval/723_epoch
 
 <p>4. Download dataset <a href="https://drive.google.com/drive/folders/15r5ZrX-pmfTON0Nkw-s3MY-ZsEhez5ez?usp=share_link"><b>"full_set_separateavg_logo_2std"</b></a> and place the folder under "biget-car/dataset".</p>
 
-<p>5. Download the trained BIGNet model <a href="https://drive.google.com/file/d/1RUOH6DCagOAhW18xjYa7030NMhxCXIPW/view?usp=sharing"><b>"rand_init_car_model 723 epochs_good test.pt"</b></a> and place it under "biget-car/curve/6brands/random_sample_logo_2std-0".</p>
+<p>5. Download the trained BIGNet model <a href="https://drive.google.com/file/d/1RUOH6DCagOAhW18xjYa7030NMhxCXIPW/view?usp=sharing"><b>"rand_init_car_model 723 epochs_good test.pt"</b></a> and place it under "biget-car/model/curve/6brands/random_sample_logo_2std-0".</p>
 
 <p>6. Calculate confusion matrix. In terminal:</p>
 <p><pre><code>
