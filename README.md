@@ -9,7 +9,7 @@
 
 <p>This page is the implementation of BIGNet in the car case study. Phone case study implementation can be found <a href="https://github.com/parksandrecfan/bignet-phone"><b>here</b>.</p>
 <h2>Project summary</h2>
-<p>Identifying and codifying brand-related aesthetic features for produc redesign is essential yet challenging, even for humans. This project demonstrates a deep learning, data-driven way to automatically learn brand-related features through SVG-based supervised learning, using brand identification graph neural network (<b>BIGNet</b>), a hierarichal graph neural network.</p>
+<p>Identifying and codifying brand-related aesthetic features for product redesign is essential yet challenging, even for humans. This project demonstrates a deep learning, data-driven way to automatically learn brand-related features through SVG-based supervised learning, using brand identification graph neural network (<b>BIGNet</b>), a hierarichal graph neural network.</p>
 
 <p>Our approach conducting the car study can be summarized in this flow chart. Note that this page is the implementation of training BIGNet rather than the image processing pipeline. It would allow one to train BIGNet from an SVG dataset (vectorized from a pixel dataset).</p>
 <img src="data/flowchart.png" width="1000">
